@@ -46,41 +46,63 @@
 
 <!-- PROJECTS -->
 <section id="projects">
+
     <h2 class="section-title">Projects</h2>
 
     <div class="project-card">
         <h3>DreamLance</h3>
-        <p>A freelance marketplace concept with modern UI/UX design system.</p>
+        <p>Freelance marketplace for local services like hairdressers, plumbers, electricians and tutors.</p>
+
+        <button class="btn" onclick="openModal()">View DreamLance</button>
     </div>
 
-    <!-- AUDREY PROJECT -->
     <div class="project-card">
-        <h3>Audrey The Hair Dresser Website</h3>
-        <p>
-            A premium salon website built for Audrey Hair Studio in Harare.
-            It includes services, gallery, booking system, and branding identity.
-        </p>
+        <h3>Audrey Hair Studio</h3>
+        <p>Premium salon website with booking system and branding identity.</p>
 
-        <a href="audrey.html" class="btn">View Case Study</a>
+        <a href="about.html" class="btn">View Case Study</a>
     </div>
 
     <div class="project-card">
         <h3>DreamLance Mini App</h3>
-        <p>A simple web app simulating freelancer profiles and hiring flow.</p>
+        <p>Simple freelancer booking system prototype.</p>
+
+        <a href="dreamlance.html" class="btn">Open App</a>
     </div>
 
 </section>
 
-<!-- SKILLS -->
+<!-- SKILLS (UPDATED ONLY HERE) -->
 <section id="skills">
     <h2 class="section-title">Skills</h2>
 
     <div class="skills-box">
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>Python</div>
-        <div>UI/UX Design</div>
-        <div>Product Thinking</div>
+
+        <div>
+            <strong>HTML</strong><br>
+            I used HTML when creating the structure of this website. It helps me build the layout, organise sections like navigation, hero, projects and contact. It is the foundation of every webpage I create.
+        </div>
+
+        <div>
+            <strong>CSS</strong><br>
+            I use CSS to style my websites and make them visually attractive. It helps me control colors, spacing, animations and layout design. It is what makes my projects look modern and professional.
+        </div>
+
+        <div>
+            <strong>Python</strong><br>
+            I use Python to build logic-based programs and simple applications. It helps me solve problems and understand backend development. I use it for automation and small system projects.
+        </div>
+
+        <div>
+            <strong>UI/UX Design</strong><br>
+            I design user interfaces that are simple and easy to use. I focus on user experience, layout structure and visual flow. This helps me create better apps like DreamLance and Audrey website.
+        </div>
+
+        <div>
+            <strong>Product Thinking</strong><br>
+            I use product thinking to turn ideas into real digital solutions. I analyse problems and design features that solve them. It helps me plan apps from idea stage to final product.
+        </div>
+
     </div>
 </section>
 
@@ -90,14 +112,38 @@
 
     <p>Email: romeo061316@gmail.com</p>
 
-    <a href="https://wa.me/263775408999" class="btn">
+    <a href="https://wa.me/263776643374" class="btn">
         Chat on WhatsApp
     </a>
 </section>
 
+<!-- FOOTER -->
 <footer>
     <p>© 2026 Romeo. All rights reserved.</p>
 </footer>
+
+<!-- MODAL -->
+<div id="modal" class="modal hidden">
+    <div class="box">
+        <h2>DreamLance</h2>
+        <p>Choose how to view the project</p>
+
+        <a class="btn" href="dreamlance.html">View App</a>
+        <a class="btn-outline" href="https://www.behance.net/gallery/246756987/Dreamlance-Marketplace" target="https://www.behance.net/gallery/246756987/Dreamlance-Marketplace">Behance</a>
+
+        <button class="btn" onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+<script>
+function openModal(){
+    document.getElementById("modal").classList.remove("hidden");
+}
+
+function closeModal(){
+    document.getElementById("modal").classList.add("hidden");
+}
+</script>
 
 </body>
 </html>
