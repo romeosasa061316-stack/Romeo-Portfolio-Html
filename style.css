@@ -27,12 +27,14 @@ nav {
 
 nav h2 {
     color: #38bdf8;
+    margin: 0;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     gap: 20px;
+    margin: 0;
 }
 
 nav ul li a {
@@ -43,6 +45,71 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #38bdf8;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 3px 0;
+    transition: 0.3s;
+    display: block;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 5%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex !important;
+    }
+
+    nav ul.active {
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        flex-direction: column;
+        background-color: #0b1220;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+        margin: 0;
+        z-index: 999;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
 }
 
 /* HERO */
