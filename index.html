@@ -13,12 +13,17 @@
 <!-- NAV -->
 <nav>
     <h2>Romeo</h2>
-    <ul>
+    <ul id="nav-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </nav>
 
 <!-- HERO (MY VERSION) -->
@@ -145,6 +150,14 @@ function openModal(){
 function closeModal(){
     document.getElementById("modal").classList.add("hidden");
 }
+
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", function() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
 </script>
 
 </body>
