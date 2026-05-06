@@ -241,17 +241,6 @@ footer {
 
 @media (max-width: 900px) {
 
-    nav {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     .hero {
         flex-direction: column;
         text-align: center;
